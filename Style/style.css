@@ -1,0 +1,151 @@
+@charset "utf-8";
+body{
+	margin: 0;
+	
+}
+.display{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.clock {
+	height: 300px;
+	width: 300px;
+	border: 10px solid #ffe6d5;
+	border-radius: 50%;
+  	background-color: seashell; 
+  	position: relative;
+}
+.clock::after {
+  background-color: black;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 51%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 15px;
+  
+}
+.clock-num{
+	width:20px;
+	height:50%;
+	top:0;
+	right:47%;
+	position:absolute;
+	transform-origin:50% 100%;
+	
+}
+.clock-num span{
+	position:absolute;
+}
+hr{
+	position: absolute;
+	right: 0;
+	width: 15px;
+	height: 1px;
+}
+#num-one{
+	transform:rotate(30deg);
+}
+#num-one span{
+	transform: rotate(-90deg);
+}
+#num-two{
+	transform:rotate(60deg);
+}
+#num-two span{
+	transform:rotate(-90deg);
+}
+#num-three{
+	transform:rotate(90deg);
+}
+#num-three span{
+	transform:rotate(-90deg);
+}
+#num-four{
+	transform:rotate(120deg);
+}
+#num-four span{
+	transform:rotate(-90deg);
+}
+#num-five{
+	transform:rotate(150deg);
+}
+#num-five span{
+	transform:rotate(-90deg);
+}
+#num-six{
+	transform:rotate(180deg);
+}
+#num-six span{
+	transform:rotate(-180deg);
+}
+#num-seven{
+	transform:rotate(210deg);
+}
+#num-seven span{
+	transform:rotate(-90deg);
+}
+#num-eight{
+	transform:rotate(240deg);
+}
+#num-eight span{
+	transform:rotate(-90deg);
+}
+#num-nine{
+	transform:rotate(270deg);
+}
+#num-nine span{
+	transform:rotate(-270deg);
+}
+#num-ten{
+	transform:rotate(300deg);
+}
+#num-ten span{
+	transform:rotate(-90deg);
+}
+#num-eleven{
+	transform:rotate(330deg);
+}
+#num-eleven span{
+	transform:rotate(-90deg);
+}
+.hours{
+	width: 6px;
+	height: 100px;
+	background-color: black;
+	position: absolute;
+	top: 16%;
+	left: 49%;
+	transform-origin: 50% 100%;
+	animation: rotate 43200s infinite linear;
+	 
+}
+.mintus{
+	width: 4px;
+	height: 115px;
+	background-color: black;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	transform-origin: 50% 100%;
+	animation: rotate 3600s infinite steps(60);
+}
+.second{
+	width: 2px;
+	height: 130px;
+	background-color: #323232;
+	position: absolute;
+	top: 8%;
+	left: 50%;
+	transform-origin: 50% 100%;
+	animation: rotate 60s infinite steps(60);
+}
+@keyframes rotate{
+	100%{
+		transform:rotate(360deg);
+	}
+}
